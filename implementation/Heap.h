@@ -6,13 +6,17 @@ class Heap
 {
 private:
     int size;
+    int arraySize;
     int *arr;
-    void swap(int parent, int child);
+    void swap(int parentIndex, int childIndex);
+    void heapify(int index);
+    void siftUp(int index);
+
 public:
     Heap();
-    Heap(int* array, int size);
+    Heap(int *array, int size);
     ~Heap();
-    void heapify(int index);
     void printHeap();
     void pop();
+    void insert(int val);
 };

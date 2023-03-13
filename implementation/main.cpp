@@ -7,5 +7,8 @@ int main() {
     hp.printHeap();
     hp.pop();
     hp.printHeap();
+    hp.insert(19);
+    hp.printHeap();
+    hp.insert(40);
     return 0;
 }
